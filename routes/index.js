@@ -1,6 +1,6 @@
 import { Router } from "express";
-import { numberRoutes } from "./numbers.routes";
+import { numberRoutes } from "./numbers.routes.js";
 
-const programRoutes = Router();
+export const programRoutes = Router();
 
 programRoutes.use("/numbers", numberRoutes);
